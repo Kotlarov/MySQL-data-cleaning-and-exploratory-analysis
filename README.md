@@ -1,4 +1,6 @@
 # MySQL-project
 
-Data tables created with:
-https://github.com/AlexTheAnalyst/MySQL-YouTube-Series/blob/main/Beginner%20-%20Select%20Statement.sql
+
+
+Socioeconomic Factors and Income Dataset from kaggle:
+https://www.kaggle.com/datasets/aldol07/socioeconomic-factors-and-income-dataset?resource=download
