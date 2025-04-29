@@ -24,7 +24,7 @@ WITH duplicate_cte AS (
 # see duplicates
 SELECT * FROM duplicate_cte
 WHERE row_num > 1;
-#to delete duplicates a new table is necessary because we cant delete from the cte
+#to delete duplicates, a new table is necessary because we can't delete from the cte
 
 # create a new table with row_num column
 # (right click table, copy to clipboard, create statement, add row_num)
@@ -58,7 +58,7 @@ WHERE row_num > 1;
 SELECT *
 FROM sgdata_modified_cleaning2;
 
-# this methond also works without a unique ID column by including all columns in the PARTITION BY
+# this method also works without a unique ID column by including all columns in the PARTITION BY
 # an easier method here would be to create a new table with SELECT DISTINCT 
 
 # -------------- standardize data --------------
@@ -69,7 +69,7 @@ FROM sgdata_modified_cleaning2;
 SELECT DISTINCT Education
 FROM sgdata_modified_cleaning2;
 
-# the data set was stadardized already but lets look at some common methods 
+# the data set was standardized already, but let's look at some common methods 
 # remove white spaces at the beginning and end
 #UPDATE sgdata_modified_cleaning2
 #SET Education = TRIM(Education);
@@ -106,7 +106,7 @@ WHERE Income IS NULL
 OR Income = '';
 
 
-# -------------- remove colums if nececary --------------
+# -------------- remove columns if necessary --------------
 #remove row_num that was used to remove duplicates
 ALTER TABLE sgdata_modified_cleaning2
 DROP COLUMN row_num;
