@@ -29,7 +29,7 @@ SELECT Sex, AVG(Income) AS Avg_Income
 FROM sgdata_modified_cleaning2
 GROUP BY Sex
 ORDER BY Avg_Income DESC;
-# women in this data set earn approximatly 13% more than men
+# women in this data set earn approximately 13% more than men
 
 # income by sex and marital status
 SELECT Sex, `Marital status`, AVG(Income) AS Avg_Income
@@ -50,7 +50,7 @@ SELECT Occupation, AVG(Income) AS Avg_Income
 FROM sgdata_modified_cleaning2
 GROUP BY Occupation
 ORDER BY Avg_Income DESC;
-# as expected, managers self empoyed or highly qualified people earn the most
+# as expected, managers self-employed or highly qualified people earn the most
 
 # younger people and less skilled occupations have a lower average income
 # do younger people have less skilled occupations?
@@ -99,9 +99,9 @@ SELECT
 FROM sgdata_modified_cleaning2
 GROUP BY Age_Group, Occupation
 ORDER BY Age_Group, Occupation DESC;
-# # do younger people have less skilled occupations? Not in general:
+# do younger people have less skilled occupations? Not in general:
 # older age groups have more management positions with one exception: to 40-49 it goes down slightly
-# as a consequence the sum of unskilled and skilled decreases but both averages fluctuate
+# as a consequence, the sum of unskilled and skilled decreases, but both averages fluctuate
 
 # lastly, let's look at the income by settlement size
 SELECT `Settlement size`, AVG(Income) AS Avg_Income
